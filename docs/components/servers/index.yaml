@@ -1,0 +1,18 @@
+- url: 'http://localhost:8000'
+  description: Development Server
+- url: 'http://api.stg.{region}.example.com'
+  description: Staging Server
+  variables:
+    region:
+      default: eu-west-1
+      enum:
+        - eu-west-1
+        - us-east-1
+- url: 'http://api.{site-domain}'
+  description: Production Server
+  variables:
+    site-domain:
+      default: example.com
+      enum:
+        - example.com
+        - example.org

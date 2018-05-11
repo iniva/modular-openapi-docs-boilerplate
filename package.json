@@ -1,0 +1,16 @@
+{
+  "name": "modular-openapi-docs-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for building Open API documentation with a modular approach",
+  "main": "docs/builder.js",
+  "repository": "git@github.com:iniva/modular-openapi-docs-boilerplate.git",
+  "author": "Tony <tonyblast@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:docs": "DEBUG=docs* node docs/builder.js"
+  },
+  "devDependencies": {
+    "debug": "^3.1.0",
+    "refs": "^0.9.2"
+  }
+}

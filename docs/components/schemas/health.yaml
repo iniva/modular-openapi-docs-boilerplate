@@ -1,0 +1,6 @@
+type: object
+properties:
+  message:
+    type: string
+example:
+  message: 'All good here, thanks for asking!'

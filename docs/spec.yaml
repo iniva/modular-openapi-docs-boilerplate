@@ -1,0 +1,11 @@
+openapi: 3.0.1
+info:
+  $ref: './components/info/index.yaml'
+servers:
+  $ref: './components/servers/index.yaml'
+paths:
+  $ref: './components/paths/index.yaml'
+
+components:
+  schemas:
+    $ref: './components/schemas/index.yaml'

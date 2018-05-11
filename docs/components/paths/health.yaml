@@ -1,0 +1,15 @@
+get:
+  operationId: GET-/health
+  description: Health Check
+  tags:
+    - Health
+  responses:
+    '200':
+      description: Health Check successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $$ref: '#/components/schemas/Health'
