@@ -24,8 +24,20 @@ git filter-branch --prune-empty --subdirectory-filter docs HEAD
 
 ## Generate the documentation
 + Add the `refs` and `debug` dev dependencies.
+  ```
+  # Using Yarn
+  yarn add refs debug -D
+
+  # Using NPM
+  npm i refs debug --save-dev
+  ```
   > **debug** is not really necessary. If you want, just edit `builder.js` and replace the _logger_ function with your own implementation. A `console.log` will be enough.
-+ Add the `build:docs` script that's inside `package.json`
++ Add a `build:docs` script
+  ```javascript
+  "scripts": {
+    "build:docs": "DEBUG=docs* node docs/builder.js"
+  }
+  ```
 + Run the `build:docs` script. This will generate a file named `openapi.yaml` inside the `docs` folder
 
 ## Verifying the output
