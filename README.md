@@ -5,9 +5,6 @@ Modular approach for Open API documentation in NodeJS
 
 ### Cloning
 + Clone this repo in another location and copy the `docs` folder
-+ Add the `refs` and `debug` dev dependencies.
-  > **debug** is not really necessary. If you want, just edit `builder.js` and replace the _logger_ function with your own implementation. A `console.log` will be enough.
-+ Add the `build:docs` script that's inside `package.json`
 
 ## Downloading
 + Same as cloning, but... downloading
@@ -24,5 +21,12 @@ cd docs
 # Remove everything except the documentation structure
 git filter-branch --prune-empty --subdirectory-filter docs HEAD
 ```
-# Verifying the output
+
+## Generate the documentation
++ Add the `refs` and `debug` dev dependencies.
+  > **debug** is not really necessary. If you want, just edit `builder.js` and replace the _logger_ function with your own implementation. A `console.log` will be enough.
++ Add the `build:docs` script that's inside `package.json`
++ Run the `build:docs` script. This will generate a file named `openapi.yaml` inside the `docs` folder
+
+## Verifying the output
 Go to [Swagger Editor](http://editor.swagger.io/) and paste the contents of `openapi.yaml` and check everything is as you expected. Make adjustments if necessary.
