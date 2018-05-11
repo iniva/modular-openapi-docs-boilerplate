@@ -6,10 +6,10 @@ Modular approach for Open API documentation in NodeJS
 ### Cloning
 + Clone this repo in another location and copy the `docs` folder
 
-## Downloading
+### Downloading
 + Same as cloning, but... downloading
 
-## Fancy Cloning
+### Fancy Cloning
 Feeling lucky, punk? OK, go to your project root and do the following:
 ```bash
 # Clone this repo into a 'docs' folder
