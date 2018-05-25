@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const refs = require('refs');
+const compiler = require('refs-compiler');
 const debug = require('debug');
 
 const logger = debug('docs:builder');
@@ -10,7 +10,7 @@ const outputFile = path.resolve(`${__dirname}/openapi.yaml`);
 
 logger('Building documentation');
 try {
-    refs(inputTemplate, outputFile)
+    compiler(inputTemplate, outputFile)
         .then(results => {
             logger(`Documentation created in ${results.outputFile}`);
         })
