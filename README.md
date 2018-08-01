@@ -20,6 +20,9 @@ cd docs
 
 # Remove everything except the documentation structure
 git filter-branch --prune-empty --subdirectory-filter docs HEAD
+
+# Remove git related info (you might need sudo)
+rm -R .git
 ```
 
 ## Generate the documentation
