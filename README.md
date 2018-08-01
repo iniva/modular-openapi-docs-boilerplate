@@ -42,3 +42,25 @@ git filter-branch --prune-empty --subdirectory-filter docs HEAD
 
 ## Verifying the output
 Go to [Swagger Editor](http://editor.swagger.io/) and paste the contents of `openapi.yaml` and check everything is as you expected. Make adjustments if necessary.
+
+# Documentation
+You have some alternatives to view the documentation. All of them assumes you already have a local copy of this repository.
+
+### Webstorm
+Go to `path/to/docs` and open the context menu (secondary click) over `index.html`. Select the option **Open in browser** and select your preferred one.
+
+### Local server
+In your terminal go to `path/to/docs` and run the following command:
++ **NodeJS (using npx)**: Assuming you have NodeJS + NPM (>= 5.2) installed.
+    ```bash
+    npx http-server -p 9090
+    ```
++ **PHP**: Assuming you have PHP (>= 5.6) installed.
+    ```bash
+    php -S 0.0.0.0:9090
+    ```
++ **Python**: Assuming you have Python (>= 2.7) installed.
+    ```bash
+    python -m SimpleHTTPServer 9090
+    ```
++ Now open your [browser](http://localhost:9090)
