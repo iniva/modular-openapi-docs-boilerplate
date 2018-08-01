@@ -23,13 +23,13 @@ git filter-branch --prune-empty --subdirectory-filter docs HEAD
 ```
 
 ## Generate the documentation
-+ Add the `refs` and `debug` dev dependencies.
++ Add the `refs-compiler` and `debug` dev dependencies.
   ```
   # Using Yarn
-  yarn add refs debug -D
+  yarn add refs-compiler debug -D
 
   # Using NPM
-  npm i refs debug --save-dev
+  npm i refs-compiler debug --save-dev
   ```
   > **debug** is not really necessary. If you want, just edit `builder.js` and replace the _logger_ function with your own implementation. A `console.log` will be enough.
 + Add a `build:docs` script
