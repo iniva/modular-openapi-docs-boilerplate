@@ -10,7 +10,7 @@
     "build:docs": "DEBUG=docs* node docs/builder.js"
   },
   "devDependencies": {
-    "debug": "^3.1.0",
-    "refs-compiler": "^1.0.0"
+    "debug": "^4.1.1",
+    "refs-compiler": "^1.0.1"
   }
 }
