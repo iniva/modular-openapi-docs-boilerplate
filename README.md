@@ -1,5 +1,15 @@
-# Modular Openapi Docs Boilerplate
+# Modular Openapi Docs Boilerplate <!-- omit in toc -->
 Modular approach for Open API documentation in NodeJS
+
+- [Installation](#installation)
+  - [Cloning](#cloning)
+  - [Downloading](#downloading)
+  - [Fancy Cloning](#fancy-cloning)
+- [Generate the documentation](#generate-the-documentation)
+- [Verifying the output](#verifying-the-output)
+- [Documentation](#documentation)
+  - [In Editors](#in-editors)
+  - [Local server](#local-server)
 
 ## Installation
 
@@ -46,11 +56,13 @@ rm -R .git
 ## Verifying the output
 Go to [Swagger Editor](http://editor.swagger.io/) and paste the contents of `openapi.yaml` and check everything is as you expected. Make adjustments if necessary.
 
-# Documentation
+## Documentation
 You have some alternatives to view the documentation. All of them assumes you already have a local copy of this repository.
 
-### Webstorm
-Go to `path/to/docs` and open the context menu (secondary click) over `index.html`. Select the option **Open in browser** and select your preferred one.
+### In Editors
+Most editors would let you open a local html into your preffered Browser. In **Webstorm** or **VSCode**, for example, you can go to `path/to/docs` and open the context menu (secondary click) over `index.html`:
+* Webstorm: select the option **Open in browser** and select your preferred one.
+* VSCode: select the option **Open in Default Browser** or **Open in Other Browsers** and select your preferred one.
 
 ### Local server
 In your terminal go to `path/to/docs` and run the following command:
