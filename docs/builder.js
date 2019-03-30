@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const compiler = require('refs-compiler');
+const { default: compiler } = require('refs-compiler');
 const debug = require('debug');
 
 const logger = debug('docs:builder');
